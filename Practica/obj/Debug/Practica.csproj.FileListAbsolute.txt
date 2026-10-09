@@ -1,0 +1,8 @@
+C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\bin\Debug\Practica.exe
+C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\bin\Debug\Practica.pdb
+C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.csprojResolveAssemblyReference.cache
+C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.MainForm.resources
+C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.csproj.GenerateResource.Cache
+C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.exe
+C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.pdb
+C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.Registro.resources

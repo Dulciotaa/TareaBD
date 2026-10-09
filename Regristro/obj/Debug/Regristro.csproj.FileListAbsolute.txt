@@ -1,0 +1,7 @@
+C:\Users\a\Documents\SharpDevelop Projects\Practica\Regristro\bin\Debug\Regristro.exe
+C:\Users\a\Documents\SharpDevelop Projects\Practica\Regristro\bin\Debug\Regristro.pdb
+C:\Users\a\Documents\SharpDevelop Projects\Practica\Regristro\obj\Debug\Regristro.csprojResolveAssemblyReference.cache
+C:\Users\a\Documents\SharpDevelop Projects\Practica\Regristro\obj\Debug\Regristro.csproj.GenerateResource.Cache
+C:\Users\a\Documents\SharpDevelop Projects\Practica\Regristro\obj\Debug\Regristro.exe
+C:\Users\a\Documents\SharpDevelop Projects\Practica\Regristro\obj\Debug\Regristro.pdb
+C:\Users\a\Documents\SharpDevelop Projects\Practica\Regristro\obj\Debug\Regristro.MainForm.resources
