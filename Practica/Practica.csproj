@@ -51,6 +51,14 @@
     <Compile Include="DatosDireccion.Designer.cs">
       <DependentUpon>DatosDireccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Administrador.cs" />
+    <Compile Include="Administrador.Designer.cs">
+      <DependentUpon>Administrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado.cs" />
+    <Compile Include="Empleado.Designer.cs">
+      <DependentUpon>Empleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -67,6 +75,12 @@
   <ItemGroup>
     <EmbeddedResource Include="DatosDireccion.resx">
       <DependentUpon>DatosDireccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador.resx">
+      <DependentUpon>Administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado.resx">
+      <DependentUpon>Empleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
