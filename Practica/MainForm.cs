@@ -34,8 +34,8 @@ namespace Practica
 		
 		void Button1Click(object sender, EventArgs e)
 		{
-			Registro pnlRegistro=new Registro();
-			pnlRegistro.Show();
+			Administrador Admin = new Administrador();
+			Admin.Show();
 		}
 		
 		void TxtContraseñaTextChanged(object sender, EventArgs e)

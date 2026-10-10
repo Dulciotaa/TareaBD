@@ -49,7 +49,7 @@ namespace Practica
 			this.btnLogIn.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
 			this.btnLogIn.FlatAppearance.BorderSize = 5;
 			this.btnLogIn.ForeColor = System.Drawing.Color.Cornsilk;
-			this.btnLogIn.Location = new System.Drawing.Point(211, 336);
+			this.btnLogIn.Location = new System.Drawing.Point(229, 296);
 			this.btnLogIn.Name = "btnLogIn";
 			this.btnLogIn.Size = new System.Drawing.Size(113, 29);
 			this.btnLogIn.TabIndex = 0;
