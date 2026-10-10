@@ -6,3 +6,4 @@ C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.
 C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.exe
 C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.pdb
 C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.Registro.resources
+C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.DatosDireccion.resources
