@@ -32,10 +32,11 @@ namespace Practica
 		
 		
 		
-		void Button1Click(object sender, EventArgs e)
+		void BtnLoginClick(object sender, EventArgs e)
 		{
 			Administrador Admin = new Administrador();
 			Admin.Show();
+			this.Hide();
 		}
 		
 		void TxtContraseñaTextChanged(object sender, EventArgs e)
@@ -48,14 +49,6 @@ namespace Practica
 			
 		}
 		
-		void Label1Click(object sender, EventArgs e)
-		{
-			
-		}
 		
-		void MainFormLoad(object sender, EventArgs e)
-		{
-			
-		}
 	}
 }

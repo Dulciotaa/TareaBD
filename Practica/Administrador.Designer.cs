@@ -38,19 +38,19 @@ namespace Practica
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administrador));
 			this.pnlPrincipal = new System.Windows.Forms.Panel();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.dtGVTablaUsers = new System.Windows.Forms.DataGridView();
 			this.lblMostUsuario = new System.Windows.Forms.Label();
 			this.btnEliminar = new System.Windows.Forms.Button();
 			this.btnAgregar = new System.Windows.Forms.Button();
 			this.btnEditar = new System.Windows.Forms.Button();
 			this.btnSalir = new System.Windows.Forms.Button();
 			this.pnlPrincipal.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dtGVTablaUsers)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// pnlPrincipal
 			// 
-			this.pnlPrincipal.Controls.Add(this.dataGridView1);
+			this.pnlPrincipal.Controls.Add(this.dtGVTablaUsers);
 			this.pnlPrincipal.Controls.Add(this.lblMostUsuario);
 			this.pnlPrincipal.Location = new System.Drawing.Point(43, 37);
 			this.pnlPrincipal.Name = "pnlPrincipal";
@@ -58,14 +58,14 @@ namespace Practica
 			this.pnlPrincipal.TabIndex = 0;
 			this.pnlPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlPrincipalPaint);
 			// 
-			// dataGridView1
+			// dtGVTablaUsers
 			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(3, 57);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(703, 481);
-			this.dataGridView1.TabIndex = 1;
+			this.dtGVTablaUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dtGVTablaUsers.Location = new System.Drawing.Point(3, 57);
+			this.dtGVTablaUsers.Name = "dtGVTablaUsers";
+			this.dtGVTablaUsers.RowTemplate.Height = 24;
+			this.dtGVTablaUsers.Size = new System.Drawing.Size(703, 481);
+			this.dtGVTablaUsers.TabIndex = 1;
 			// 
 			// lblMostUsuario
 			// 
@@ -135,11 +135,11 @@ namespace Practica
 			this.Name = "Administrador";
 			this.Text = "Administrador";
 			this.pnlPrincipal.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dtGVTablaUsers)).EndInit();
 			this.ResumeLayout(false);
 		}
 		private System.Windows.Forms.Button btnSalir;
-		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridView dtGVTablaUsers;
 		private System.Windows.Forms.Button btnEditar;
 		private System.Windows.Forms.Button btnAgregar;
 		private System.Windows.Forms.Button btnEliminar;

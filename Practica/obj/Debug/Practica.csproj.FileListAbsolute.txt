@@ -9,3 +9,14 @@ C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.
 C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.csproj.GenerateResource.Cache
 C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.exe
 C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.pdb
+C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\bin\Debug\Practica.exe
+C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\bin\Debug\Practica.pdb
+C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practica.csprojResolveAssemblyReference.cache
+C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practica.DatosDireccion.resources
+C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practica.Administrador.resources
+C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practica.Empleado.resources
+C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practica.MainForm.resources
+C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practica.Registro.resources
+C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practica.csproj.GenerateResource.Cache
+C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practica.exe
+C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practica.pdb

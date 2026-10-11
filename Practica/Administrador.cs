@@ -9,6 +9,8 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Practica
 {
@@ -17,6 +19,26 @@ namespace Practica
 	/// </summary>
 	public partial class Administrador : Form
 	{
+			void CargarDatos(){
+		    string cadenaConexion = "Server=tcp:tu_servidor.database.windows.net,1433;Initial Catalog=tu_base_de_datos;User ID=tu_usuario;Password=tu_contraseña;Encrypt=True;";
+		    string consulta = "SELECT * FROM Usuarios";
+		
+		    using (SqlConnection conexion = new SqlConnection(cadenaConexion))
+		    {
+		        try
+		        {
+		            
+		            SqlDataAdapter adapt = new SqlDataAdapter(consulta, conexion);
+		            DataTable tabla = new DataTable();
+		            adapt.Fill(tabla);
+		            dtGVTablaUsers.DataSource = tabla;
+		        }
+		        catch (Exception ex)
+		        {
+		            MessageBox.Show("Error al conectar con : " + ex.Message);
+		        }
+		    }
+		}
 		public Administrador()
 		{
 			//
@@ -36,8 +58,9 @@ namespace Practica
 		
 		void BtnAgregarClick(object sender, EventArgs e)
 		{
-			Empleado Empl = new Empleado();
-			Empl.Show();
+			Registro reg = new Registro();
+			reg.Show();
+			this.SetVisibleCore(false);
 		}
 		
 		void BtnEditarClick(object sender, EventArgs e)
@@ -53,7 +76,10 @@ namespace Practica
 		
 		void BtnSalirClick(object sender, EventArgs e)
 		{
-			this.Close();
+			MainForm main = new MainForm();
+			main.Show();
+			this.Hide();
+			
 		}
 	}
 }

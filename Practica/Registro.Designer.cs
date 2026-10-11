@@ -86,8 +86,7 @@ namespace Practica
 			this.label7.Size = new System.Drawing.Size(100, 15);
 			this.label7.TabIndex = 11;
 			this.label7.Text = "Contraseña";
-			this.label7.Click += new System.EventHandler(this.Label7Click);
-			// 
+		
 			// textBox5
 			// 
 			this.textBox5.Location = new System.Drawing.Point(21, 343);
@@ -116,7 +115,7 @@ namespace Practica
 			this.label5.Size = new System.Drawing.Size(100, 15);
 			this.label5.TabIndex = 8;
 			this.label5.Text = "Last name";
-			this.label5.Click += new System.EventHandler(this.Label5Click);
+			
 			// 
 			// label4
 			// 
@@ -139,7 +138,7 @@ namespace Practica
 			this.label3.Size = new System.Drawing.Size(100, 18);
 			this.label3.TabIndex = 6;
 			this.label3.Text = "Usuario";
-			this.label3.Click += new System.EventHandler(this.Label3Click);
+			
 			// 
 			// button1
 			// 
@@ -167,7 +166,7 @@ namespace Practica
 			this.textBox3.Name = "textBox3";
 			this.textBox3.Size = new System.Drawing.Size(236, 22);
 			this.textBox3.TabIndex = 3;
-			this.textBox3.TextChanged += new System.EventHandler(this.TextBox3TextChanged);
+			
 			// 
 			// textBox2
 			// 
@@ -204,7 +203,7 @@ namespace Practica
 			this.label2.Size = new System.Drawing.Size(300, 23);
 			this.label2.TabIndex = 1;
 			this.label2.Text = "Llene los datos de usuario";
-			this.label2.Click += new System.EventHandler(this.Label2Click);
+			
 			// 
 			// label1
 			// 
@@ -216,7 +215,7 @@ namespace Practica
 			this.label1.Size = new System.Drawing.Size(250, 40);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Datos de usuario";
-			this.label1.Click += new System.EventHandler(this.Label1Click);
+			
 			// 
 			// Registro
 			// 
@@ -227,7 +226,7 @@ namespace Practica
 			this.Controls.Add(this.panel1);
 			this.Name = "Registro";
 			this.Text = "Registro";
-			this.Load += new System.EventHandler(this.RegistroLoad);
+			
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.panel2.ResumeLayout(false);

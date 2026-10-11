@@ -55,7 +55,7 @@ namespace Practica
 			this.btnLogIn.TabIndex = 0;
 			this.btnLogIn.Text = "Iniciar Sesión";
 			this.btnLogIn.UseVisualStyleBackColor = false;
-			this.btnLogIn.Click += new System.EventHandler(this.Button1Click);
+			this.btnLogIn.Click += new System.EventHandler(this.BtnLoginClick);
 			// 
 			// txtUsuario
 			// 
@@ -77,14 +77,7 @@ namespace Practica
 			// 
 			// label1
 			// 
-			this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-			this.label1.Location = new System.Drawing.Point(211, 9);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(181, 49);
-			this.label1.TabIndex = 3;
-			this.label1.Text = "LOGIN";
-			this.label1.Click += new System.EventHandler(this.Label1Click);
+		
 			// 
 			// label2
 			// 
@@ -108,7 +101,7 @@ namespace Practica
 			this.Controls.Add(this.btnLogIn);
 			this.Name = "MainForm";
 			this.Text = "Practica";
-			this.Load += new System.EventHandler(this.MainFormLoad);
+			
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}

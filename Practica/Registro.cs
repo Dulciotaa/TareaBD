@@ -24,10 +24,6 @@ namespace Practica
 
 		}
 		
-		void RegistroLoad(object sender, EventArgs e)
-		{
-			
-		}
 		
 		void Panel1Paint(object sender, PaintEventArgs e)
 		{
@@ -37,43 +33,6 @@ namespace Practica
 		void Panel2Paint(object sender, PaintEventArgs e)
 		{
 			panel2.BackColor = Color.FromArgb(80, 230, 230, 250);
-		}
-		
-		
-		void Label1Click(object sender, EventArgs e)
-		{
-			
-		}
-		
-		void Label2Click(object sender, EventArgs e)
-		{
-			
-		}
-		
-		
-		void PictureBox1Click(object sender, EventArgs e)
-		{
-			
-		}
-		
-		void TextBox3TextChanged(object sender, EventArgs e)
-		{
-		
-		}
-		
-		void Label5Click(object sender, EventArgs e)
-		{
-			
-		}
-		
-		void Label3Click(object sender, EventArgs e)
-		{
-			
-		}
-		
-		void Label7Click(object sender, EventArgs e)
-		{
-			
 		}
 		
 		void Button1Click(object sender, EventArgs e)
