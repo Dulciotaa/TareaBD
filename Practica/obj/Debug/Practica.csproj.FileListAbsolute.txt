@@ -22,3 +22,6 @@ C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practi
 C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practica.pdb
 C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.DatosTarjeta.resources
 C:\Users\a\Documents\SharpDevelop Projects\Practica\Practica\obj\Debug\Practica.DatosRol.resources
+C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\bin\Debug\MySql.Data.dll
+C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practica.DatosRol.resources
+C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practica.DatosTarjeta.resources
