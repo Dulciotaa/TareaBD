@@ -77,7 +77,7 @@ namespace Practica
 			this.listBoxTurno.ItemHeight = 16;
 			this.listBoxTurno.Items.AddRange(new object[] {
 									"M",
-									"T",
+									"V",
 									"N"});
 			this.listBoxTurno.Location = new System.Drawing.Point(11, 305);
 			this.listBoxTurno.Name = "listBoxTurno";
@@ -106,7 +106,7 @@ namespace Practica
 			this.lblTurno.Name = "lblTurno";
 			this.lblTurno.Size = new System.Drawing.Size(400, 30);
 			this.lblTurno.TabIndex = 7;
-			this.lblTurno.Text = "Turno de trabajo.\r\nM(Mañana), T(Tarde), N(noche)";
+			this.lblTurno.Text = "Turno de trabajo.\r\nM(Matutino), V(Vespertino), N(nocturno)";
 			// 
 			// txtCalle
 			// 
