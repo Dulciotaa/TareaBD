@@ -55,6 +55,14 @@
     <Compile Include="Administrador.Designer.cs">
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatosRol.cs" />
+    <Compile Include="DatosRol.Designer.cs">
+      <DependentUpon>DatosRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatosTarjeta.cs" />
+    <Compile Include="DatosTarjeta.Designer.cs">
+      <DependentUpon>DatosTarjeta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Empleado.cs" />
     <Compile Include="Empleado.Designer.cs">
       <DependentUpon>Empleado.cs</DependentUpon>
@@ -76,6 +84,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatosRol.resx">
+      <DependentUpon>DatosRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatosTarjeta.resx">
+      <DependentUpon>DatosTarjeta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleado.resx">
       <DependentUpon>Empleado.cs</DependentUpon>
