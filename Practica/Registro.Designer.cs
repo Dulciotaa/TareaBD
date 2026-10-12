@@ -38,37 +38,37 @@ namespace Practica
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro));
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.label7 = new System.Windows.Forms.Label();
-			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.lblContraseña = new System.Windows.Forms.Label();
+			this.txtContraseña = new System.Windows.Forms.TextBox();
+			this.lblCorreo = new System.Windows.Forms.Label();
+			this.lblApellidos = new System.Windows.Forms.Label();
+			this.lblNombre = new System.Windows.Forms.Label();
+			this.lblUsuario = new System.Windows.Forms.Label();
+			this.btnSiguiente = new System.Windows.Forms.Button();
+			this.txtCorreo = new System.Windows.Forms.TextBox();
+			this.txtApellidos = new System.Windows.Forms.TextBox();
+			this.txtNombre = new System.Windows.Forms.TextBox();
+			this.txtUsuario = new System.Windows.Forms.TextBox();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
+			this.lblInfo2 = new System.Windows.Forms.Label();
+			this.lblInfo = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
 			// 
-			this.panel1.Controls.Add(this.label7);
-			this.panel1.Controls.Add(this.textBox5);
-			this.panel1.Controls.Add(this.label6);
-			this.panel1.Controls.Add(this.label5);
-			this.panel1.Controls.Add(this.label4);
-			this.panel1.Controls.Add(this.label3);
-			this.panel1.Controls.Add(this.button1);
-			this.panel1.Controls.Add(this.textBox4);
-			this.panel1.Controls.Add(this.textBox3);
-			this.panel1.Controls.Add(this.textBox2);
-			this.panel1.Controls.Add(this.textBox1);
+			this.panel1.Controls.Add(this.lblContraseña);
+			this.panel1.Controls.Add(this.txtContraseña);
+			this.panel1.Controls.Add(this.lblCorreo);
+			this.panel1.Controls.Add(this.lblApellidos);
+			this.panel1.Controls.Add(this.lblNombre);
+			this.panel1.Controls.Add(this.lblUsuario);
+			this.panel1.Controls.Add(this.btnSiguiente);
+			this.panel1.Controls.Add(this.txtCorreo);
+			this.panel1.Controls.Add(this.txtApellidos);
+			this.panel1.Controls.Add(this.txtNombre);
+			this.panel1.Controls.Add(this.txtUsuario);
 			this.panel1.Controls.Add(this.panel2);
 			this.panel1.Location = new System.Drawing.Point(198, 50);
 			this.panel1.Name = "panel1";
@@ -76,146 +76,141 @@ namespace Practica
 			this.panel1.TabIndex = 0;
 			this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1Paint);
 			// 
-			// label7
+			// lblContraseña
 			// 
-			this.label7.BackColor = System.Drawing.Color.Transparent;
-			this.label7.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label7.ForeColor = System.Drawing.Color.White;
-			this.label7.Location = new System.Drawing.Point(21, 328);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(100, 15);
-			this.label7.TabIndex = 11;
-			this.label7.Text = "Contraseña";
-		
-			// textBox5
+			this.lblContraseña.BackColor = System.Drawing.Color.Transparent;
+			this.lblContraseña.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblContraseña.ForeColor = System.Drawing.Color.White;
+			this.lblContraseña.Location = new System.Drawing.Point(21, 328);
+			this.lblContraseña.Name = "lblContraseña";
+			this.lblContraseña.Size = new System.Drawing.Size(100, 15);
+			this.lblContraseña.TabIndex = 11;
+			this.lblContraseña.Text = "Contraseña";
 			// 
-			this.textBox5.Location = new System.Drawing.Point(21, 343);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(233, 22);
-			this.textBox5.TabIndex = 10;
+			// txtContraseña
 			// 
-			// label6
+			this.txtContraseña.Location = new System.Drawing.Point(21, 343);
+			this.txtContraseña.Name = "txtContraseña";
+			this.txtContraseña.Size = new System.Drawing.Size(233, 22);
+			this.txtContraseña.TabIndex = 10;
 			// 
-			this.label6.BackColor = System.Drawing.Color.Transparent;
-			this.label6.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.ForeColor = System.Drawing.Color.White;
-			this.label6.Location = new System.Drawing.Point(18, 262);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(100, 15);
-			this.label6.TabIndex = 9;
-			this.label6.Text = "Correo";
+			// lblCorreo
 			// 
-			// label5
+			this.lblCorreo.BackColor = System.Drawing.Color.Transparent;
+			this.lblCorreo.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblCorreo.ForeColor = System.Drawing.Color.White;
+			this.lblCorreo.Location = new System.Drawing.Point(18, 262);
+			this.lblCorreo.Name = "lblCorreo";
+			this.lblCorreo.Size = new System.Drawing.Size(100, 15);
+			this.lblCorreo.TabIndex = 9;
+			this.lblCorreo.Text = "Correo";
 			// 
-			this.label5.BackColor = System.Drawing.Color.Transparent;
-			this.label5.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.ForeColor = System.Drawing.Color.White;
-			this.label5.Location = new System.Drawing.Point(18, 202);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(100, 15);
-			this.label5.TabIndex = 8;
-			this.label5.Text = "Last name";
-			
+			// lblApellidos
 			// 
-			// label4
+			this.lblApellidos.BackColor = System.Drawing.Color.Transparent;
+			this.lblApellidos.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblApellidos.ForeColor = System.Drawing.Color.White;
+			this.lblApellidos.Location = new System.Drawing.Point(18, 202);
+			this.lblApellidos.Name = "lblApellidos";
+			this.lblApellidos.Size = new System.Drawing.Size(100, 15);
+			this.lblApellidos.TabIndex = 8;
+			this.lblApellidos.Text = "Last name";
 			// 
-			this.label4.BackColor = System.Drawing.Color.Transparent;
-			this.label4.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.ForeColor = System.Drawing.Color.White;
-			this.label4.Location = new System.Drawing.Point(18, 148);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(100, 14);
-			this.label4.TabIndex = 7;
-			this.label4.Text = "First name";
+			// lblNombre
 			// 
-			// label3
+			this.lblNombre.BackColor = System.Drawing.Color.Transparent;
+			this.lblNombre.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblNombre.ForeColor = System.Drawing.Color.White;
+			this.lblNombre.Location = new System.Drawing.Point(18, 148);
+			this.lblNombre.Name = "lblNombre";
+			this.lblNombre.Size = new System.Drawing.Size(100, 14);
+			this.lblNombre.TabIndex = 7;
+			this.lblNombre.Text = "Nombre(s)";
 			// 
-			this.label3.BackColor = System.Drawing.Color.Transparent;
-			this.label3.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.Color.White;
-			this.label3.Location = new System.Drawing.Point(18, 92);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(100, 18);
-			this.label3.TabIndex = 6;
-			this.label3.Text = "Usuario";
-			
+			// lblUsuario
 			// 
-			// button1
+			this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
+			this.lblUsuario.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblUsuario.ForeColor = System.Drawing.Color.White;
+			this.lblUsuario.Location = new System.Drawing.Point(18, 92);
+			this.lblUsuario.Name = "lblUsuario";
+			this.lblUsuario.Size = new System.Drawing.Size(100, 18);
+			this.lblUsuario.TabIndex = 6;
+			this.lblUsuario.Text = "Usuario";
 			// 
-			this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.button1.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.Location = new System.Drawing.Point(18, 381);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(377, 43);
-			this.button1.TabIndex = 5;
-			this.button1.Text = "Siguiente";
-			this.button1.UseVisualStyleBackColor = false;
-			this.button1.Click += new System.EventHandler(this.Button1Click);
+			// btnSiguiente
 			// 
-			// textBox4
+			this.btnSiguiente.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.btnSiguiente.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSiguiente.Location = new System.Drawing.Point(18, 381);
+			this.btnSiguiente.Name = "btnSiguiente";
+			this.btnSiguiente.Size = new System.Drawing.Size(377, 43);
+			this.btnSiguiente.TabIndex = 5;
+			this.btnSiguiente.Text = "Siguiente";
+			this.btnSiguiente.UseVisualStyleBackColor = false;
+			this.btnSiguiente.Click += new System.EventHandler(this.Button1Click);
 			// 
-			this.textBox4.Location = new System.Drawing.Point(18, 280);
-			this.textBox4.Multiline = true;
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(377, 35);
-			this.textBox4.TabIndex = 4;
+			// txtCorreo
 			// 
-			// textBox3
+			this.txtCorreo.Location = new System.Drawing.Point(18, 280);
+			this.txtCorreo.Multiline = true;
+			this.txtCorreo.Name = "txtCorreo";
+			this.txtCorreo.Size = new System.Drawing.Size(377, 35);
+			this.txtCorreo.TabIndex = 4;
 			// 
-			this.textBox3.Location = new System.Drawing.Point(18, 220);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(236, 22);
-			this.textBox3.TabIndex = 3;
-			
+			// txtApellidos
 			// 
-			// textBox2
+			this.txtApellidos.Location = new System.Drawing.Point(18, 220);
+			this.txtApellidos.Name = "txtApellidos";
+			this.txtApellidos.Size = new System.Drawing.Size(236, 22);
+			this.txtApellidos.TabIndex = 3;
 			// 
-			this.textBox2.Location = new System.Drawing.Point(18, 165);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(236, 22);
-			this.textBox2.TabIndex = 2;
+			// txtNombre
 			// 
-			// textBox1
+			this.txtNombre.Location = new System.Drawing.Point(18, 165);
+			this.txtNombre.Name = "txtNombre";
+			this.txtNombre.Size = new System.Drawing.Size(236, 22);
+			this.txtNombre.TabIndex = 2;
 			// 
-			this.textBox1.Location = new System.Drawing.Point(18, 109);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(236, 22);
-			this.textBox1.TabIndex = 1;
+			// txtUsuario
+			// 
+			this.txtUsuario.Location = new System.Drawing.Point(18, 109);
+			this.txtUsuario.Name = "txtUsuario";
+			this.txtUsuario.Size = new System.Drawing.Size(236, 22);
+			this.txtUsuario.TabIndex = 1;
 			// 
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
-			this.panel2.Controls.Add(this.label2);
-			this.panel2.Controls.Add(this.label1);
+			this.panel2.Controls.Add(this.lblInfo2);
+			this.panel2.Controls.Add(this.lblInfo);
 			this.panel2.Location = new System.Drawing.Point(1, 1);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(412, 76);
 			this.panel2.TabIndex = 0;
 			this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2Paint);
 			// 
-			// label2
+			// lblInfo2
 			// 
-			this.label2.BackColor = System.Drawing.Color.Transparent;
-			this.label2.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.label2.Location = new System.Drawing.Point(17, 40);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(300, 23);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "Llene los datos de usuario";
-			
+			this.lblInfo2.BackColor = System.Drawing.Color.Transparent;
+			this.lblInfo2.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblInfo2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblInfo2.Location = new System.Drawing.Point(17, 40);
+			this.lblInfo2.Name = "lblInfo2";
+			this.lblInfo2.Size = new System.Drawing.Size(300, 23);
+			this.lblInfo2.TabIndex = 1;
+			this.lblInfo2.Text = "Llene los datos de usuario";
 			// 
-			// label1
+			// lblInfo
 			// 
-			this.label1.BackColor = System.Drawing.Color.Transparent;
-			this.label1.Font = new System.Drawing.Font("Britannic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.label1.Location = new System.Drawing.Point(17, 10);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(250, 40);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Datos de usuario";
-			
+			this.lblInfo.BackColor = System.Drawing.Color.Transparent;
+			this.lblInfo.Font = new System.Drawing.Font("Britannic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblInfo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblInfo.Location = new System.Drawing.Point(17, 10);
+			this.lblInfo.Name = "lblInfo";
+			this.lblInfo.Size = new System.Drawing.Size(250, 40);
+			this.lblInfo.TabIndex = 0;
+			this.lblInfo.Text = "Datos de usuario";
 			// 
 			// Registro
 			// 
@@ -226,25 +221,24 @@ namespace Practica
 			this.Controls.Add(this.panel1);
 			this.Name = "Registro";
 			this.Text = "Registro";
-			
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.panel2.ResumeLayout(false);
 			this.ResumeLayout(false);
 		}
-		private System.Windows.Forms.TextBox textBox5;
-		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.TextBox txtContraseña;
+		private System.Windows.Forms.Label lblContraseña;
+		private System.Windows.Forms.Label lblCorreo;
+		private System.Windows.Forms.Label lblUsuario;
+		private System.Windows.Forms.Label lblNombre;
+		private System.Windows.Forms.Label lblApellidos;
+		private System.Windows.Forms.Button btnSiguiente;
+		private System.Windows.Forms.TextBox txtUsuario;
+		private System.Windows.Forms.TextBox txtNombre;
+		private System.Windows.Forms.TextBox txtApellidos;
+		private System.Windows.Forms.TextBox txtCorreo;
+		private System.Windows.Forms.Label lblInfo2;
+		private System.Windows.Forms.Label lblInfo;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Panel panel1;
 	}
