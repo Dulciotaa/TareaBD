@@ -20,3 +20,4 @@ C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practi
 C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practica.csproj.GenerateResource.Cache
 C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practica.exe
 C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\obj\Debug\Practica.pdb
+C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\bin\Debug\MySql.Data.dll

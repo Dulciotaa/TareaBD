@@ -10,7 +10,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Data;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace Practica
 {
@@ -19,26 +19,36 @@ namespace Practica
 	/// </summary>
 	public partial class Administrador : Form
 	{
-			void CargarDatos(){
-		    string cadenaConexion = "Server=tcp:tu_servidor.database.windows.net,1433;Initial Catalog=tu_base_de_datos;User ID=tu_usuario;Password=tu_contraseña;Encrypt=True;";
-		    string consulta = "SELECT * FROM Usuarios";
-		
-		    using (SqlConnection conexion = new SqlConnection(cadenaConexion))
-		    {
-		        try
-		        {
-		            
-		            SqlDataAdapter adapt = new SqlDataAdapter(consulta, conexion);
-		            DataTable tabla = new DataTable();
-		            adapt.Fill(tabla);
-		            dtGVTablaUsers.DataSource = tabla;
-		        }
-		        catch (Exception ex)
-		        {
-		            MessageBox.Show("Error al conectar con : " + ex.Message);
-		        }
-		    }
-		}
+	void CargarDatos()
+        {
+            string cadenaConexion = "Server=practica.mysql.database.azure.com; Port=3306; Database=practicalogin; Uid=ivarodul; Pwd=13579135Ca; SslMode=None;";
+           
+            string consulta = "SELECT usuario, nombre, apellido, correo, CAST(`contraseña` AS CHAR(50)), ciudad, calle, colonia, turno, CAST(AES_DECRYPT(numeroTarjeta, 'ivarodul') AS CHAR(16)) AS numeroTarjeta, CAST(AES_DECRYPT(ccv, 'ivarodul') AS CHAR(3)) as CCV,  CAST(AES_DECRYPT(claveSeguridad, 'ivarodul') AS CHAR(5)) as Clave, fechaCreacion, sueldo, rol FROM usuarios";
+
+            using (MySqlConnection conexion = new MySqlConnection(cadenaConexion))
+            {
+                try
+                {
+                    conexion.Open();
+
+                    string configCharset = "SET character_set_client = utf8, character_set_connection = utf8, character_set_results = latin1;";
+                    MySqlCommand cmdSet = new MySqlCommand(configCharset, conexion);
+            		cmdSet.ExecuteNonQuery();
+                   
+
+                    MySqlDataAdapter adapt = new MySqlDataAdapter(consulta, conexion);
+                    DataTable tabla = new DataTable();
+                    adapt.Fill(tabla);
+
+                    dtGVTablaUsers.DataSource = null;
+                    dtGVTablaUsers.DataSource = tabla;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al conectar con MySQL: " + ex.Message);
+                }
+            }
+        }
 		public Administrador()
 		{
 			//
@@ -53,7 +63,7 @@ namespace Practica
 		
 		void PnlPrincipalPaint(object sender, PaintEventArgs e)
 		{
-			pnlPrincipal.BackColor = Color.FromArgb(100, 250, 250, 250);
+			
 		}
 		
 		void BtnAgregarClick(object sender, EventArgs e)
@@ -78,8 +88,13 @@ namespace Practica
 		{
 			MainForm main = new MainForm();
 			main.Show();
-			this.Hide();
+			this.Close();
 			
+		}
+		void AdministradorLoad(object sender, EventArgs e)
+		{
+		    CargarDatos();
+		    pnlPrincipal.BackColor = Color.FromArgb(100, 250, 250, 250);
 		}
 	}
 }

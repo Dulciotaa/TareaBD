@@ -41,6 +41,8 @@ namespace Practica
 			this.txtContraseña = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
+			this.btnCerrar = new System.Windows.Forms.Button();
+			this.cmbRol = new System.Windows.Forms.ComboBox();
 			this.SuspendLayout();
 			// 
 			// btnLogIn
@@ -49,7 +51,7 @@ namespace Practica
 			this.btnLogIn.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
 			this.btnLogIn.FlatAppearance.BorderSize = 5;
 			this.btnLogIn.ForeColor = System.Drawing.Color.Cornsilk;
-			this.btnLogIn.Location = new System.Drawing.Point(229, 296);
+			this.btnLogIn.Location = new System.Drawing.Point(223, 329);
 			this.btnLogIn.Name = "btnLogIn";
 			this.btnLogIn.Size = new System.Drawing.Size(113, 29);
 			this.btnLogIn.TabIndex = 0;
@@ -77,7 +79,10 @@ namespace Practica
 			// 
 			// label1
 			// 
-		
+			this.label1.Location = new System.Drawing.Point(0, 0);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(100, 23);
+			this.label1.TabIndex = 5;
 			// 
 			// label2
 			// 
@@ -88,12 +93,40 @@ namespace Practica
 			this.label2.TabIndex = 4;
 			this.label2.Text = "Ingrese su usuario y su contraseña para iniciar sesión:";
 			// 
+			// btnCerrar
+			// 
+			this.btnCerrar.BackColor = System.Drawing.Color.DarkGray;
+			this.btnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+			this.btnCerrar.FlatAppearance.BorderSize = 5;
+			this.btnCerrar.ForeColor = System.Drawing.Color.Cornsilk;
+			this.btnCerrar.Location = new System.Drawing.Point(12, 380);
+			this.btnCerrar.Name = "btnCerrar";
+			this.btnCerrar.Size = new System.Drawing.Size(113, 29);
+			this.btnCerrar.TabIndex = 6;
+			this.btnCerrar.Text = "Cerrar";
+			this.btnCerrar.UseVisualStyleBackColor = false;
+			this.btnCerrar.Click += new System.EventHandler(this.BtnCerrarClick);
+			// 
+			// cmbRol
+			// 
+			this.cmbRol.FormattingEnabled = true;
+			this.cmbRol.Items.AddRange(new object[] {
+									"Administrador",
+									"Empleado"});
+			this.cmbRol.Location = new System.Drawing.Point(223, 257);
+			this.cmbRol.Name = "cmbRol";
+			this.cmbRol.Size = new System.Drawing.Size(121, 24);
+			this.cmbRol.TabIndex = 7;
+			this.cmbRol.Text = "Administrador";
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.CornflowerBlue;
 			this.ClientSize = new System.Drawing.Size(574, 421);
+			this.Controls.Add(this.cmbRol);
+			this.Controls.Add(this.btnCerrar);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.txtContraseña);
@@ -101,10 +134,11 @@ namespace Practica
 			this.Controls.Add(this.btnLogIn);
 			this.Name = "MainForm";
 			this.Text = "Practica";
-			
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.ComboBox cmbRol;
+		private System.Windows.Forms.Button btnCerrar;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox txtContraseña;

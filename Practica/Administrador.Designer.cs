@@ -134,6 +134,7 @@ namespace Practica
 			this.Controls.Add(this.pnlPrincipal);
 			this.Name = "Administrador";
 			this.Text = "Administrador";
+			this.Load += new System.EventHandler(this.AdministradorLoad);
 			this.pnlPrincipal.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.dtGVTablaUsers)).EndInit();
 			this.ResumeLayout(false);
