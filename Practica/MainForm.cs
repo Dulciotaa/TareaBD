@@ -101,7 +101,7 @@ namespace Practica
 		
 		void TxtUsuarioTextChanged(object sender, EventArgs e)
 		{
-			
+						
 		}
 		
 		
@@ -113,5 +113,17 @@ namespace Practica
 		}
 		
 		
+		
+		void TxtUsuarioClick(object sender, EventArgs e)
+		{
+			txtUsuario.Text = "";
+			txtUsuario.ForeColor = Color.Black;
+		}
+		
+		void TxtContraseñaClick(object sender, EventArgs e)
+		{
+			txtContraseña.Text = "";
+			txtContraseña.ForeColor = Color.Black;
+		}
 	}
 }
