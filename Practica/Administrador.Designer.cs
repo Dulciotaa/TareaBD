@@ -44,17 +44,19 @@ namespace Practica
 			this.btnAgregar = new System.Windows.Forms.Button();
 			this.btnEditar = new System.Windows.Forms.Button();
 			this.btnSalir = new System.Windows.Forms.Button();
+			this.label1 = new System.Windows.Forms.Label();
 			this.pnlPrincipal.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dtGVTablaUsers)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// pnlPrincipal
 			// 
+			this.pnlPrincipal.Controls.Add(this.label1);
 			this.pnlPrincipal.Controls.Add(this.dtGVTablaUsers);
 			this.pnlPrincipal.Controls.Add(this.lblMostUsuario);
-			this.pnlPrincipal.Location = new System.Drawing.Point(43, 37);
+			this.pnlPrincipal.Location = new System.Drawing.Point(37, 28);
 			this.pnlPrincipal.Name = "pnlPrincipal";
-			this.pnlPrincipal.Size = new System.Drawing.Size(709, 541);
+			this.pnlPrincipal.Size = new System.Drawing.Size(731, 550);
 			this.pnlPrincipal.TabIndex = 0;
 			this.pnlPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlPrincipalPaint);
 			// 
@@ -69,12 +71,13 @@ namespace Practica
 			// 
 			// lblMostUsuario
 			// 
-			this.lblMostUsuario.Font = new System.Drawing.Font("Segoe Print", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblMostUsuario.Font = new System.Drawing.Font("Segoe Print", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblMostUsuario.Location = new System.Drawing.Point(0, 0);
 			this.lblMostUsuario.Name = "lblMostUsuario";
-			this.lblMostUsuario.Size = new System.Drawing.Size(473, 54);
+			this.lblMostUsuario.Size = new System.Drawing.Size(375, 38);
 			this.lblMostUsuario.TabIndex = 0;
-			this.lblMostUsuario.Text = "Bienvenido ";
+			this.lblMostUsuario.Text = "Bienvenido, administrador";
+			
 			// 
 			// btnEliminar
 			// 
@@ -121,6 +124,15 @@ namespace Practica
 			this.btnSalir.UseVisualStyleBackColor = false;
 			this.btnSalir.Click += new System.EventHandler(this.BtnSalirClick);
 			// 
+			// label1
+			// 
+			this.label1.Font = new System.Drawing.Font("Segoe Print", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(77, 28);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(432, 26);
+			this.label1.TabIndex = 2;
+			this.label1.Text = "Lista de usuarios:";
+			// 
 			// Administrador
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -139,6 +151,7 @@ namespace Practica
 			((System.ComponentModel.ISupportInitialize)(this.dtGVTablaUsers)).EndInit();
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button btnSalir;
 		private System.Windows.Forms.DataGridView dtGVTablaUsers;
 		private System.Windows.Forms.Button btnEditar;
