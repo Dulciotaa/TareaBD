@@ -222,6 +222,13 @@ namespace Practica
 		
 		void BtnSiguienteClick(object sender, System.EventArgs e)
 		{
+			DatosUsuario.ciudad=txtCiudad.Text;
+			DatosUsuario.calle=txtCalle.Text;
+			DatosUsuario.colonia=txtColonia.Text;
+			string turnoSeleccionado = listBoxTurno.SelectedItem.ToString();
+			DatosUsuario.turno=turnoSeleccionado;
+		
+			
 		DatosTarjeta Tarjeta= new DatosTarjeta();
 			Tarjeta.Show();			
 		}

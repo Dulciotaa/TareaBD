@@ -43,6 +43,12 @@ namespace Practica
 		
 		void BtnSiguienteClick(object sender, EventArgs e)
 		{
+			DatosUsuario.numeroTarjeta=txtnumeroTarjeta.Text;
+			DatosUsuario.CCV=txtCCV.Text;
+			DatosUsuario.claveSeguridad=txtClaveSeguridad.Text;
+			
+			
+			
 			DatosRol Rol= new DatosRol();
 			Rol.Show();
 		}

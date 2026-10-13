@@ -66,6 +66,7 @@
     <Compile Include="DatosTarjeta.Designer.cs">
       <DependentUpon>DatosTarjeta.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatosUsuario.cs" />
     <Compile Include="Empleado.cs" />
     <Compile Include="Empleado.Designer.cs">
       <DependentUpon>Empleado.cs</DependentUpon>

@@ -37,6 +37,12 @@ namespace Practica
 		
 		void Button1Click(object sender, EventArgs e)
 		{
+			DatosUsuario.usuario=txtUsuario.Text;
+			DatosUsuario.nombre=txtNombre.Text;
+			DatosUsuario.apellido=txtApellidos.Text;
+			DatosUsuario.correo=txtCorreo.Text;
+			DatosUsuario.contraseña=txtContraseña.Text;
+			
 			DatosDireccion direccion= new DatosDireccion();
 			direccion.Show();
 		}

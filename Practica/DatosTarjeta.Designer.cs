@@ -45,12 +45,16 @@ namespace Practica
 			this.lblNumeroTarjeta = new System.Windows.Forms.Label();
 			this.pnlInfo = new System.Windows.Forms.Panel();
 			this.lblNecesidad = new System.Windows.Forms.Label();
+			this.lblClaveSeguidad = new System.Windows.Forms.Label();
+			this.txtClaveSeguridad = new System.Windows.Forms.TextBox();
 			this.pnlTransparente.SuspendLayout();
 			this.pnlInfo.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// pnlTransparente
 			// 
+			this.pnlTransparente.Controls.Add(this.txtClaveSeguridad);
+			this.pnlTransparente.Controls.Add(this.lblClaveSeguidad);
 			this.pnlTransparente.Controls.Add(this.btnSiguiente);
 			this.pnlTransparente.Controls.Add(this.txtCCV);
 			this.pnlTransparente.Controls.Add(this.lblCvv);
@@ -130,6 +134,24 @@ namespace Practica
 			this.lblNecesidad.TabIndex = 0;
 			this.lblNecesidad.Text = "Necesitamos conocer\r\nalgunos datos de la tarjeta de credito";
 			// 
+			// lblClaveSeguidad
+			// 
+			this.lblClaveSeguidad.BackColor = System.Drawing.Color.Transparent;
+			this.lblClaveSeguidad.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblClaveSeguidad.ForeColor = System.Drawing.Color.Snow;
+			this.lblClaveSeguidad.Location = new System.Drawing.Point(184, 162);
+			this.lblClaveSeguidad.Name = "lblClaveSeguidad";
+			this.lblClaveSeguidad.Size = new System.Drawing.Size(180, 23);
+			this.lblClaveSeguidad.TabIndex = 6;
+			this.lblClaveSeguidad.Text = "Clave de seguridad";
+			// 
+			// txtClaveSeguridad
+			// 
+			this.txtClaveSeguridad.Location = new System.Drawing.Point(184, 188);
+			this.txtClaveSeguridad.Name = "txtClaveSeguridad";
+			this.txtClaveSeguridad.Size = new System.Drawing.Size(180, 22);
+			this.txtClaveSeguridad.TabIndex = 7;
+			// 
 			// DatosTarjeta
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -144,6 +166,8 @@ namespace Practica
 			this.pnlInfo.ResumeLayout(false);
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.Label lblClaveSeguidad;
+		private System.Windows.Forms.TextBox txtClaveSeguridad;
 		private System.Windows.Forms.TextBox txtnumeroTarjeta;
 		private System.Windows.Forms.Label lblCvv;
 		private System.Windows.Forms.TextBox txtCCV;
