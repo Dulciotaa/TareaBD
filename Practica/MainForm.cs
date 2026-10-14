@@ -39,14 +39,10 @@ namespace Practica
 			string rol = cmbRol.Text; 
             string usuario = txtUsuario.Text;
             string contraseña = txtContraseña.Text;
-            string dbUser="";
-            string dbcon="";
+            string dbUser="ivarodul";
+            string dbcon="13579135Ca";
             
-            if (rol == "Administrador")
-            {
-                dbUser = "ivarodul";
-                dbcon = "13579135Ca";
-            }
+           
 
             string cadenaConexion = "Server=practica.mysql.database.azure.com; Port=3306; Database=practicalogin; Uid=" + dbUser + "; Pwd="+dbcon+"; SslMode=None;";
             
@@ -73,12 +69,12 @@ namespace Practica
                     {
                         if (rol == "Administrador")
                         {
-                            Administrador Admin = new Administrador();
+                            Administrador Admin = new Administrador(usuario);
                             Admin.Show();
                         }
                         else
                         {
-                            Empleado Empl = new Empleado();
+                            Empleado Empl = new Empleado(usuario);
                             Empl.Show();
                         }
                         this.Hide();
@@ -124,6 +120,13 @@ namespace Practica
 		{
 			txtContraseña.Text = "";
 			txtContraseña.ForeColor = Color.Black;
+		}
+		
+		void MainFormLoad(object sender, EventArgs e)
+		{
+			pbInicio.BackColor = Color.Transparent;
+			pbInicio.Image = Image.FromFile(@"C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\img\iconoInicioo.png");
+			pbInicio.SizeMode = PictureBoxSizeMode.StretchImage;
 		}
 	}
 }

@@ -44,10 +44,13 @@ namespace Practica
 			this.btnCerrar = new System.Windows.Forms.Button();
 			this.cmbRol = new System.Windows.Forms.ComboBox();
 			this.lblLogin = new System.Windows.Forms.Label();
+			this.pbInicio = new System.Windows.Forms.PictureBox();
+			((System.ComponentModel.ISupportInitialize)(this.pbInicio)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// btnLogIn
 			// 
+			this.btnLogIn.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.btnLogIn.BackColor = System.Drawing.Color.DarkGray;
 			this.btnLogIn.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
 			this.btnLogIn.FlatAppearance.BorderSize = 5;
@@ -62,10 +65,11 @@ namespace Practica
 			// 
 			// txtUsuario
 			// 
+			this.txtUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.txtUsuario.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-			this.txtUsuario.Location = new System.Drawing.Point(137, 127);
+			this.txtUsuario.Location = new System.Drawing.Point(137, 177);
 			this.txtUsuario.Name = "txtUsuario";
-			this.txtUsuario.Size = new System.Drawing.Size(315, 22);
+			this.txtUsuario.Size = new System.Drawing.Size(268, 22);
 			this.txtUsuario.TabIndex = 1;
 			this.txtUsuario.Text = "Ingrese su usuario";
 			this.txtUsuario.Click += new System.EventHandler(this.TxtUsuarioClick);
@@ -73,10 +77,11 @@ namespace Practica
 			// 
 			// txtContraseña
 			// 
+			this.txtContraseña.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.txtContraseña.ForeColor = System.Drawing.SystemColors.ScrollBar;
-			this.txtContraseña.Location = new System.Drawing.Point(137, 204);
+			this.txtContraseña.Location = new System.Drawing.Point(137, 227);
 			this.txtContraseña.Name = "txtContraseña";
-			this.txtContraseña.Size = new System.Drawing.Size(315, 22);
+			this.txtContraseña.Size = new System.Drawing.Size(268, 22);
 			this.txtContraseña.TabIndex = 2;
 			this.txtContraseña.Text = "Ingrese contraseña";
 			this.txtContraseña.Click += new System.EventHandler(this.TxtContraseñaClick);
@@ -91,8 +96,9 @@ namespace Practica
 			// 
 			// label2
 			// 
+			this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-			this.label2.Location = new System.Drawing.Point(113, 78);
+			this.label2.Location = new System.Drawing.Point(114, 60);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(369, 23);
 			this.label2.TabIndex = 4;
@@ -100,6 +106,7 @@ namespace Practica
 			// 
 			// btnCerrar
 			// 
+			this.btnCerrar.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.btnCerrar.BackColor = System.Drawing.Color.DarkGray;
 			this.btnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
 			this.btnCerrar.FlatAppearance.BorderSize = 5;
@@ -114,11 +121,12 @@ namespace Practica
 			// 
 			// cmbRol
 			// 
+			this.cmbRol.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.cmbRol.FormattingEnabled = true;
 			this.cmbRol.Items.AddRange(new object[] {
 									"Administrador",
 									"Empleado"});
-			this.cmbRol.Location = new System.Drawing.Point(223, 257);
+			this.cmbRol.Location = new System.Drawing.Point(223, 287);
 			this.cmbRol.Name = "cmbRol";
 			this.cmbRol.Size = new System.Drawing.Size(121, 24);
 			this.cmbRol.TabIndex = 7;
@@ -126,6 +134,7 @@ namespace Practica
 			// 
 			// lblLogin
 			// 
+			this.lblLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.lblLogin.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblLogin.ForeColor = System.Drawing.SystemColors.ControlLight;
 			this.lblLogin.Location = new System.Drawing.Point(223, 19);
@@ -134,12 +143,20 @@ namespace Practica
 			this.lblLogin.TabIndex = 8;
 			this.lblLogin.Text = "LOGIN";
 			// 
+			// pbInicio
+			// 
+			this.pbInicio.Location = new System.Drawing.Point(236, 86);
+			this.pbInicio.Name = "pbInicio";
+			this.pbInicio.Size = new System.Drawing.Size(100, 85);
+			this.pbInicio.TabIndex = 9;
+			this.pbInicio.TabStop = false;
+			// 
 			// MainForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.Color.CornflowerBlue;
 			this.ClientSize = new System.Drawing.Size(574, 421);
+			this.Controls.Add(this.pbInicio);
 			this.Controls.Add(this.lblLogin);
 			this.Controls.Add(this.cmbRol);
 			this.Controls.Add(this.btnCerrar);
@@ -150,9 +167,12 @@ namespace Practica
 			this.Controls.Add(this.btnLogIn);
 			this.Name = "MainForm";
 			this.Text = "Practica";
+			this.Load += new System.EventHandler(this.MainFormLoad);
+			((System.ComponentModel.ISupportInitialize)(this.pbInicio)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.PictureBox pbInicio;
 		private System.Windows.Forms.Label lblLogin;
 		private System.Windows.Forms.ComboBox cmbRol;
 		private System.Windows.Forms.Button btnCerrar;

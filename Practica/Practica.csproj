@@ -105,5 +105,11 @@
       <DependentUpon>Registro.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\iconoInicioo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
