@@ -58,6 +58,7 @@ namespace Practica
 			// 
 			// panel1
 			// 
+			this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.panel1.Controls.Add(this.lblContraseña);
 			this.panel1.Controls.Add(this.txtContraseña);
 			this.panel1.Controls.Add(this.lblCorreo);

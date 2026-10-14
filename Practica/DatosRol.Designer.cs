@@ -51,6 +51,7 @@ namespace Practica
 			// 
 			// pnlTransparente
 			// 
+			this.pnlTransparente.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.pnlTransparente.Controls.Add(this.btnRegistrar);
 			this.pnlTransparente.Controls.Add(this.listBoxRol);
 			this.pnlTransparente.Controls.Add(this.lblRol);

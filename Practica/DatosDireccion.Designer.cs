@@ -10,9 +10,6 @@ namespace Practica
 {
 	partial class DatosDireccion
 	{
-		/// <summary>
-		/// Designer variable used to keep track of non-visual components.
-		/// </summary>
 		private System.ComponentModel.IContainer components = null;
 		
 		/// <summary>
@@ -55,6 +52,7 @@ namespace Practica
 			// 
 			// pnlTrans
 			// 
+			this.pnlTrans.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.pnlTrans.Controls.Add(this.listBoxTurno);
 			this.pnlTrans.Controls.Add(this.btnSiguiente);
 			this.pnlTrans.Controls.Add(this.lblTurno);
@@ -230,7 +228,9 @@ namespace Practica
 		
 			
 		DatosTarjeta Tarjeta= new DatosTarjeta();
-			Tarjeta.Show();			
+			Tarjeta.Show();
+			this.Hide();
+			
 		}
 		
 		

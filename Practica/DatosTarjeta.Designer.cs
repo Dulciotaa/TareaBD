@@ -38,6 +38,8 @@ namespace Practica
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DatosTarjeta));
 			this.pnlTransparente = new System.Windows.Forms.Panel();
+			this.txtClaveSeguridad = new System.Windows.Forms.TextBox();
+			this.lblClaveSeguidad = new System.Windows.Forms.Label();
 			this.btnSiguiente = new System.Windows.Forms.Button();
 			this.txtCCV = new System.Windows.Forms.TextBox();
 			this.lblCvv = new System.Windows.Forms.Label();
@@ -45,14 +47,13 @@ namespace Practica
 			this.lblNumeroTarjeta = new System.Windows.Forms.Label();
 			this.pnlInfo = new System.Windows.Forms.Panel();
 			this.lblNecesidad = new System.Windows.Forms.Label();
-			this.lblClaveSeguidad = new System.Windows.Forms.Label();
-			this.txtClaveSeguridad = new System.Windows.Forms.TextBox();
 			this.pnlTransparente.SuspendLayout();
 			this.pnlInfo.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// pnlTransparente
 			// 
+			this.pnlTransparente.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.pnlTransparente.Controls.Add(this.txtClaveSeguridad);
 			this.pnlTransparente.Controls.Add(this.lblClaveSeguidad);
 			this.pnlTransparente.Controls.Add(this.btnSiguiente);
@@ -66,6 +67,24 @@ namespace Practica
 			this.pnlTransparente.Size = new System.Drawing.Size(413, 304);
 			this.pnlTransparente.TabIndex = 0;
 			this.pnlTransparente.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlTransparentePaint);
+			// 
+			// txtClaveSeguridad
+			// 
+			this.txtClaveSeguridad.Location = new System.Drawing.Point(184, 188);
+			this.txtClaveSeguridad.Name = "txtClaveSeguridad";
+			this.txtClaveSeguridad.Size = new System.Drawing.Size(180, 22);
+			this.txtClaveSeguridad.TabIndex = 7;
+			// 
+			// lblClaveSeguidad
+			// 
+			this.lblClaveSeguidad.BackColor = System.Drawing.Color.Transparent;
+			this.lblClaveSeguidad.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblClaveSeguidad.ForeColor = System.Drawing.Color.Snow;
+			this.lblClaveSeguidad.Location = new System.Drawing.Point(184, 162);
+			this.lblClaveSeguidad.Name = "lblClaveSeguidad";
+			this.lblClaveSeguidad.Size = new System.Drawing.Size(180, 23);
+			this.lblClaveSeguidad.TabIndex = 6;
+			this.lblClaveSeguidad.Text = "Clave de seguridad";
 			// 
 			// btnSiguiente
 			// 
@@ -133,24 +152,6 @@ namespace Practica
 			this.lblNecesidad.Size = new System.Drawing.Size(350, 50);
 			this.lblNecesidad.TabIndex = 0;
 			this.lblNecesidad.Text = "Necesitamos conocer\r\nalgunos datos de la tarjeta de credito";
-			// 
-			// lblClaveSeguidad
-			// 
-			this.lblClaveSeguidad.BackColor = System.Drawing.Color.Transparent;
-			this.lblClaveSeguidad.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblClaveSeguidad.ForeColor = System.Drawing.Color.Snow;
-			this.lblClaveSeguidad.Location = new System.Drawing.Point(184, 162);
-			this.lblClaveSeguidad.Name = "lblClaveSeguidad";
-			this.lblClaveSeguidad.Size = new System.Drawing.Size(180, 23);
-			this.lblClaveSeguidad.TabIndex = 6;
-			this.lblClaveSeguidad.Text = "Clave de seguridad";
-			// 
-			// txtClaveSeguridad
-			// 
-			this.txtClaveSeguridad.Location = new System.Drawing.Point(184, 188);
-			this.txtClaveSeguridad.Name = "txtClaveSeguridad";
-			this.txtClaveSeguridad.Size = new System.Drawing.Size(180, 22);
-			this.txtClaveSeguridad.TabIndex = 7;
 			// 
 			// DatosTarjeta
 			// 
