@@ -36,18 +36,18 @@ namespace Practica
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Empleado));
 			this.pnlCentral = new System.Windows.Forms.Panel();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.dtGVTablaUsers = new System.Windows.Forms.DataGridView();
 			this.lblMostrUsuario = new System.Windows.Forms.Label();
 			this.btnSalir = new System.Windows.Forms.Button();
 			this.pnlCentral.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dtGVTablaUsers)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// pnlCentral
 			// 
-			this.pnlCentral.Controls.Add(this.dataGridView1);
+			this.pnlCentral.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.pnlCentral.Controls.Add(this.dtGVTablaUsers);
 			this.pnlCentral.Controls.Add(this.lblMostrUsuario);
 			this.pnlCentral.Location = new System.Drawing.Point(57, 58);
 			this.pnlCentral.Name = "pnlCentral";
@@ -55,17 +55,19 @@ namespace Practica
 			this.pnlCentral.TabIndex = 0;
 			this.pnlCentral.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlCentralPaint);
 			// 
-			// dataGridView1
+			// dtGVTablaUsers
 			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(0, 45);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(691, 495);
-			this.dataGridView1.TabIndex = 1;
+			this.dtGVTablaUsers.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.dtGVTablaUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dtGVTablaUsers.Location = new System.Drawing.Point(0, 45);
+			this.dtGVTablaUsers.Name = "dtGVTablaUsers";
+			this.dtGVTablaUsers.RowTemplate.Height = 24;
+			this.dtGVTablaUsers.Size = new System.Drawing.Size(691, 495);
+			this.dtGVTablaUsers.TabIndex = 1;
 			// 
 			// lblMostrUsuario
 			// 
+			this.lblMostrUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.lblMostrUsuario.Font = new System.Drawing.Font("Segoe Print", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblMostrUsuario.Location = new System.Drawing.Point(0, 0);
 			this.lblMostrUsuario.Name = "lblMostrUsuario";
@@ -75,6 +77,7 @@ namespace Practica
 			// 
 			// btnSalir
 			// 
+			this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.btnSalir.BackColor = System.Drawing.SystemColors.ActiveCaption;
 			this.btnSalir.Location = new System.Drawing.Point(57, 622);
 			this.btnSalir.Name = "btnSalir";
@@ -88,18 +91,19 @@ namespace Practica
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.BackColor = System.Drawing.Color.SkyBlue;
 			this.ClientSize = new System.Drawing.Size(816, 657);
 			this.Controls.Add(this.btnSalir);
 			this.Controls.Add(this.pnlCentral);
 			this.Name = "Empleado";
 			this.Text = "Empleado";
+			this.Load += new System.EventHandler(this.EmpleadoLoad);
 			this.pnlCentral.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dtGVTablaUsers)).EndInit();
 			this.ResumeLayout(false);
 		}
 		private System.Windows.Forms.Button btnSalir;
-		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridView dtGVTablaUsers;
 		private System.Windows.Forms.Label lblMostrUsuario;
 		private System.Windows.Forms.Panel pnlCentral;
 	}

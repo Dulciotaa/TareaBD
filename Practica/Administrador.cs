@@ -19,6 +19,7 @@ namespace Practica
     /// </summary>
     public partial class Administrador : Form
     {
+    	string usuarioLogueado;
         void CargarDatos()
         {
             string cadenaConexion = "Server=practica.mysql.database.azure.com; Port=3306; Database=practicalogin; Uid=ivarodul; Pwd=13579135Ca; SslMode=None;";
@@ -49,9 +50,10 @@ namespace Practica
             }
         }
 
-        public Administrador()
+        public Administrador(String usuario)
         {
-            //
+            
+			usuarioLogueado = usuario;
             // The InitializeComponent() call is required for Windows Forms designer support.
             //
             InitializeComponent();
@@ -207,6 +209,7 @@ namespace Practica
         {
             CargarDatos();
             pnlPrincipal.BackColor = Color.FromArgb(100, 250, 250, 250);
+            lblMostUsuario.Text = "Bienvenido " + usuarioLogueado;
         }
     }
 }
