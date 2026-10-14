@@ -125,8 +125,7 @@ namespace Practica
 		void MainFormLoad(object sender, EventArgs e)
 		{
 			pbInicio.BackColor = Color.Transparent;
-			pbInicio.Image = Image.FromFile(@"C:\Users\dulma\Documents\SharpDevelop Projects\TareaBD\Practica\img\iconoInicioo.png");
-			pbInicio.SizeMode = PictureBoxSizeMode.StretchImage;
+   			pbInicio.SizeMode = PictureBoxSizeMode.StretchImage;
 		}
 	}
 }

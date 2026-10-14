@@ -36,6 +36,7 @@ namespace Practica
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.btnLogIn = new System.Windows.Forms.Button();
 			this.txtUsuario = new System.Windows.Forms.TextBox();
 			this.txtContraseña = new System.Windows.Forms.TextBox();
@@ -145,9 +146,10 @@ namespace Practica
 			// 
 			// pbInicio
 			// 
+			this.pbInicio.Image = ((System.Drawing.Image)(resources.GetObject("pbInicio.Image")));
 			this.pbInicio.Location = new System.Drawing.Point(236, 86);
 			this.pbInicio.Name = "pbInicio";
-			this.pbInicio.Size = new System.Drawing.Size(100, 85);
+			this.pbInicio.Size = new System.Drawing.Size(90, 85);
 			this.pbInicio.TabIndex = 9;
 			this.pbInicio.TabStop = false;
 			// 

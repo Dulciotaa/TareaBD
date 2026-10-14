@@ -117,7 +117,7 @@ namespace Practica
         MessageBox.Show("Ocurrió un error: " + ex.Message);
     }
     
-    	Administrador admin= new Administrador();
+    	Administrador admin= new Administrador(DatosUsuario.usuario);
 		admin.Show();
 		
 		this.Hide();
